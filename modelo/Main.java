@@ -147,6 +147,9 @@ public class Main {
                             proyectoFinal.calificar(proyectoNota);
                             estudiante.agregarProyectoFinal(proyectoFinal);
                             break;
+                    case 5:
+                            System.out.println("Saliendo del menú de docente.");
+                            break;
                     default:
                         System.out.println("Opción inválida. Por favor, seleccione una opción válida.");
                             break;
