@@ -8,7 +8,8 @@ public class Main {
         Estudiante estudiante1 = new Estudiante("Maria Gomez", "A001");
         do{
             System.out.println("Bienvenido al sistema de gestión académica");
-            System.out.println("Usted es 1.estudiante o 2. docente?");
+            System.out.println("Usted es 1.estudiante ");
+            System.out.println("Usted es 2. docente ");
             System.out.println("Ingrese 3 para salir");
             opcion = scanner.nextInt();
             
@@ -69,6 +70,10 @@ public class Main {
                             System.out.println("El estudiante " + codigoEstudiante3 + " no aprobó el curso o no se encontró.");
                         }
                         break;
+                    case 4:
+                        System.out.println("Saliendo del menú de estudiante.");
+                        break;
+                        
                     default:
                         System.out.println("Opción inválida. Por favor, seleccione una opción válida.");
                     }
@@ -142,6 +147,9 @@ public class Main {
                             proyectoFinal.calificar(proyectoNota);
                             estudiante.agregarProyectoFinal(proyectoFinal);
                             break;
+                    case 5:
+                            System.out.println("Saliendo del menú de docente.");
+                            break;
                     default:
                         System.out.println("Opción inválida. Por favor, seleccione una opción válida.");
                             break;
@@ -153,10 +161,6 @@ public class Main {
 
         }}while (opcion != 3);
         
-            
-
-        
-
 
     }
 }
